@@ -132,6 +132,14 @@ public class MainActivity extends AppCompatActivity
 			Intent intent=new Intent(this,ValueAnimatorActivity.class);
 			startActivity(intent);
 			break;
+		case R.id.btn_layout_anim:
+			Intent intent1=new Intent(this,LayoutTransitionActivity.class);
+			startActivity(intent1);
+			break;
+		case R.id.btn_transition:
+			Intent intent2=new Intent(this,TransitionActivity.class);
+			startActivity(intent2);
+			break;
 		}
 	}
 	

@@ -16,6 +16,8 @@
             </intent-filter>
         </activity>
 	    <activity android:name=".ValueAnimatorActivity"/>
+	    <activity android:name=".LayoutTransitionActivity"/>
+	    <activity android:name=".TransitionActivity"/>
     </application>
 
 </manifest>
