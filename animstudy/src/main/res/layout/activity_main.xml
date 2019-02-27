@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:orientation="vertical"
+	>
+	<LinearLayout
+		android:id="@+id/ll_count"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		>
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="各种动画"
+			/>
+		
+		<Button
+			android:id="@+id/anim1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="onClick"
+			android:text="anim1"
+			/>
+		
+		<Button
+			android:id="@+id/anim2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="onClick"
+			android:text="anim2"
+			/>
+		
+		<Button
+			android:id="@+id/anim3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="onClick"
+			android:text="anim3"
+			/>
+		
+		<Button
+			android:id="@+id/anim4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="onClick"
+			android:text="anim4"
+			/>
+		
+		<Button
+			android:id="@+id/anim5"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="onClick"
+			android:text="anim5"
+			/>
+		
+		<Button
+			android:id="@+id/anim6"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="onClick"
+			android:text="anim6"
+			/>
+		
+	</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
