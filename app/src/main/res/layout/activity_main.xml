@@ -182,5 +182,13 @@
 		android:layout_height="200dp"
 		android:layout_centerHorizontal="true"
 		android:layout_gravity="center"
+		android:visibility="gone"
+		/>
+	
+	<cn.bluemobi.dylan.animatordemo.ViewDemo22
+		android:id="@+id/viewdemo"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="200dp"
 		/>
 </LinearLayout>

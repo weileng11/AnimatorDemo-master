@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity
 	private ImageView iv;
 	private StepArcView sv;
 	private Button btn_sf;
+	private ViewDemo22 viewDemo22;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity
 		iv=(ImageView)findViewById(R.id.iv);
 		sv=(StepArcView)findViewById(R.id.sv);
 		btn_sf=(Button)findViewById(R.id.btn_sf);
+		viewDemo22=(ViewDemo22)findViewById(R.id.viewdemo);
 	}
 	
 	@RequiresApi(api=Build.VERSION_CODES.HONEYCOMB)
@@ -123,7 +125,8 @@ public class MainActivity extends AppCompatActivity
 			objectAnimatorBg.start();
 			break;
 		case R.id.animation_layout:
-			sv.setCurrentCount(7000, 1200);
+			//sv.setCurrentCount(7000, 1200);
+			objectValueTest();
 			break;
 		case R.id.animation_activity:
 			parabola();
@@ -173,5 +176,20 @@ public class MainActivity extends AppCompatActivity
 				iv.setY(point.y);
 			}
 		});
+	}
+	
+	//
+	private void objectValueTest(){
+		ObjectAnimator objectAnimator = ObjectAnimator.ofInt(viewDemo22, "radius", 50, 150);
+		objectAnimator.setDuration(1000);
+		objectAnimator.setInterpolator(new LinearInterpolator());
+		objectAnimator.setRepeatCount(-1);
+		objectAnimator.start();
+		
+		//ObjectAnimator objectAnimator = ObjectAnimator.ofInt(viewDemo22, "color", Color.RED, Color.GREEN);
+		//objectAnimator.setDuration(1000);
+		//objectAnimator.setInterpolator(new LinearInterpolator());
+		//objectAnimator.setRepeatCount(-1);
+		//objectAnimator.start();
 	}
 }
